@@ -1,0 +1,24 @@
+// main.scss 統一管理 scss 檔
+
+// utils 內輔助管理 or 產生樣式的檔案 
+//@import "./helper/vairables";
+@import "./helper/mixin";
+
+// 第三方套件(未連結)@import "vendors/bootstrap";
+
+// base
+@import "./base/reset";
+@import "./base/base";
+@import "./base/fontStyle";
+
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/container";
+
+// components(未連結)
+//@import "components/buttons";
+
+// pages
+@import "pages/index";

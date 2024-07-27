@@ -1,0 +1,93 @@
+
+.footer{
+  background: #AA0601;
+  //為甚麼這邊放$PrimaryColor讀不到?
+  color:white;
+  
+}
+  
+
+.footerContainer{
+  max-width: 1032px;
+  margin: 0 auto;
+  padding-top: 48px;
+  @include mobile{
+    padding: 27px 24px 13px 14px;
+  }
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+a:hover{
+  color: blue;
+}
+.footerup{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomnav{
+  font-size: 16px;
+  display: flex;
+  padding: 12px 0;
+  padding-bottom: 24px;
+  gap: 48px;
+  @include mobile {
+    display:none;
+  }
+}
+.contact{  
+  font-size: 36px;
+  padding-bottom: 32px;
+  @include mobile{
+    font-size: 16px;
+  }
+  .contactitem{
+    display: flex;
+    align-items: center;
+  }
+  p{
+    padding-left: 12px;
+  }
+}
+.pb8{
+  padding-bottom: 8px;
+}
+.socialmedia{
+  display: flex;
+  gap: 32px;
+  @include mobile {
+    gap: 8px;
+  }
+  img{
+    max-width:48px;
+    @include mobile {
+      max-width:24px;
+    }
+  }
+}
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  border-top: 1px solid white;
+  padding: 32px 0;
+  @include mobile {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    padding-top: 16px;
+  }
+}
+.copyrightul{
+  display: flex;
+  font-size: 14px;
+  gap: 48px;
+  @include mobile{
+    font-size: 16px;
+    flex-direction: column;
+    gap:8px;
+  }
+}
+
