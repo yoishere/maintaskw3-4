@@ -1,3 +1,39 @@
-.index-title {
-  font-size: 100px;
+.banner{
+  background-image:url(/assets/images/home-header.png);
+}
+.container{
+  max-width: 1032px;
+  margin: 0 auto;
+  padding: 80 0px;
+  @include mobile{
+    padding: 40px 14px;
+  }
+}
+h1{
+  font-size: 64px;
+  font-weight: bold;
+  color: $primaryColor;
+}
+h2{
+  font-size: 48px;
+  color: $primaryColor;
+  font-weight: bold;
+}
+h3{
+  font-size: 36px;
+  color: $primaryColor;
+}
+h4{
+  font-size: 24px;
+  color: $primaryColor;
+  font-weight: bold;
+}
+h5{
+  font-size: 48px;
+  color: $secondaryColor;
+  font-style: italic;
+}
+p{
+  font-size: 16px;
+  color: #000;
 }
