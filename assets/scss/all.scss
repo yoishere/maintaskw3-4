@@ -1,7 +1,7 @@
 // main.scss 統一管理 scss 檔
 
 // utils 內輔助管理 or 產生樣式的檔案 
-@import "./helper/vairables";
+@import "./helper/variables";
 @import "./helper/mixin";
 
 // 第三方套件(未連結)@import "vendors/bootstrap";
@@ -20,6 +20,6 @@
 // components(未連結)- 資料夾存放網站某些較小可重複使用的元件ex:buttons/carousel/cover/dropdown
 //@import "components/buttons";
 
-// pages
-@import "pages/contact";
+// pages(未連結)@import "pages/contact";
+
 @import "pages/index";
