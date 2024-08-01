@@ -42,14 +42,14 @@ p{
   background-repeat: no-repeat;
   background-position: 0 0;
 
-  ul{
+  .banner-text{
     text-align: right;
     padding: 216px 0;
   }
   .btn{
     text-decoration: none;
     color: white;
-    display: block;
+    display: inline-block;
     padding: 6px 12px;
     background-color: $primaryColor;
     cursor: pointer;
