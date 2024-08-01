@@ -1,6 +1,4 @@
-.banner{
-  background-image:url(/assets/images/home-header.png);
-}
+
 .container{
   max-width: 1032px;
   margin: 0 auto;
@@ -35,5 +33,28 @@ h5{
 }
 p{
   font-size: 16px;
-  color: #000;
+}
+
+/***banner stat***/
+.banner{
+  background-image:url(/assets/images/home-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  ul{
+    text-align: right;
+    padding: 216px 0;
+  }
+  .btn{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 6px 12px;
+    background-color: $primaryColor;
+    cursor: pointer;
+    text-align: center;
+    width: 104px;
+  }
+  
 }
