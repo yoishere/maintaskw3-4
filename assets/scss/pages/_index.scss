@@ -1,35 +1,62 @@
 
+/***全部***/
+*,*::before,*::after {
+  box-sizing: border-box;
+}
 .container{
   max-width: 1032px;
   margin: 0 auto;
   padding: 80 0px;
   @include mobile{
-    padding: 40px 14px;
+    padding: 40px 13px;
   }
 }
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 h1{
   font-size: 64px;
   font-weight: bold;
   color: $primaryColor;
+  @include mobile{
+    font-size: 24px;
+  }
 }
 h2{
   font-size: 48px;
   color: $primaryColor;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 48px;
+  @include mobile{
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
 }
+
 h3{
   font-size: 36px;
   color: $primaryColor;
+  @include mobile{
+    font-size: 16px;
+  }
 }
 h4{
   font-size: 24px;
   color: $primaryColor;
   font-weight: bold;
+  text-align: center;
 }
 h5{
   font-size: 48px;
   color: $secondaryColor;
   font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
 }
 p{
   font-size: 16px;
@@ -40,13 +67,22 @@ p{
   background-image:url(/assets/images/home-header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
+  @include mobile{
+    background-image:url(/assets/images/home-header-sm.png);
+    //這邊高度與設計稿一樣，但圖片內容沒有看到模特兒手的完整圈圈，不知道怎麼調整
+
+  }
 
   .banner-text{
     text-align: right;
     padding: 216px 0;
+    @include mobile{
+      padding: 104px 0;
+    }
   }
   .btn{
+    margin-top:4px;
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -55,6 +91,78 @@ p{
     cursor: pointer;
     text-align: center;
     width: 104px;
+    @include mobile{
+      margin-top: 14px;
+    }
   }
-  
 }
+
+/***about start***/
+
+//為甚麼container的padding在這邊沒有被呈現，但max-width: 1032px有呢?
+//看一下icon要怎麼寫才能有這個大小、需要置中怎麼辦?
+
+.about{
+  background-color: $thirdColor;
+  .container h2{    
+    margin-bottom: 32.33px;
+  }
+}
+
+.aboutrow{
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+  flex-wrap: wrap;  
+  }
+}
+
+.col-3{
+  gap: 24px;
+  
+}  
+.about .container .card{
+  width: 25%;
+    @include mobile{
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  img{
+    vertical-align: middle;
+  }
+}
+
+
+/***classicaltype start***/  
+
+.classicaltype-row{
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+  flex-wrap: wrap;  
+  }  
+}
+.classicaltype-card{
+  width: 33%;
+  @include mobile{
+    width: 100%;
+    }
+  img{
+    vertical-align: middle;
+  }
+}
+/***cobranding start***/ 
+.cobranding{
+  background-image: url(.../assets/images/index-bg.png);
+}
+.cobranding-row{
+  display: flex;
+  @include mobile{
+  flex-wrap: wrap;  
+  }  
+}
+
+
+
+
+/****{outline:1px solid grey;}
