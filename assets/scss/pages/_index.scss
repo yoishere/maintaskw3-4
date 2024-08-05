@@ -159,7 +159,7 @@ p{
 .cobranding{
   background-image: url("/assets/images/index-bg.png");
   @include mobile{
-    background-image: url("/assets/images/index-sm.png");  
+    background-image: url("/assets/images/index-bg-sm.png");  
     }
   h2{color: white;}
 }
@@ -169,8 +169,21 @@ p{
   flex-wrap: wrap;  
   }  
 }
-
-
+/***recommend start***/ 
+.recommend-row{
+  display: flex;
+  gap: 24px;
+  @include mobile{
+  flex-wrap: wrap;  
+  } 
+  .card{
+    width: 25%;
+    /***這邊要補陰影***/ 
+  } 
+}
+.date{
+  color: #707070;
+}
 
 
 *{outline:1px solid grey;}
