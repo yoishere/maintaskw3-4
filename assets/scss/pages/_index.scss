@@ -99,7 +99,7 @@ p{
 
 /***about start***/
 
-//為甚麼container的padding在這邊沒有被呈現，但max-width: 1032px有呢?
+
 //看一下icon要怎麼寫才能有這個大小、需要置中怎麼辦?
 
 .about{
@@ -114,6 +114,10 @@ p{
   justify-content: space-between;
   @include mobile{
   flex-wrap: wrap;  
+  }
+  .col-3 .card img{
+    display: flex;
+    vertical-align: middle;
   }
 }
 
@@ -168,4 +172,4 @@ p{
 
 
 
-/****{outline:1px solid grey;}***/
+*{outline:1px solid grey;}
