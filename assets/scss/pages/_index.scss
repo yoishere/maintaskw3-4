@@ -181,6 +181,14 @@ p{
     /***這邊要補陰影***/ 
   } 
 }
+.customer{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
 .date{
   color: #707070;
 }
