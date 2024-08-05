@@ -153,7 +153,10 @@ p{
 }
 /***cobranding start***/ 
 .cobranding{
-  background-image: url(.../assets/images/index-bg.png);
+  background-image: url("/assets/images/index-bg.png");
+  @include mobile{
+    background-image: url("/assets/images/index-sm.png");  
+    }
 }
 .cobranding-row{
   display: flex;
@@ -165,4 +168,4 @@ p{
 
 
 
-/****{outline:1px solid grey;}
+/****{outline:1px solid grey;}***/
