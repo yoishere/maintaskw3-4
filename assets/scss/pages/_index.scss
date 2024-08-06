@@ -130,10 +130,15 @@ p{
     @include mobile{
       width: 100%;
       flex-wrap: wrap;
-    }
-  img{
-    vertical-align: middle;
-  }
+    } 
+  h4{
+    margin-bottom: 8px;
+  }; 
+}
+.about-img{
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 
@@ -178,20 +183,99 @@ p{
   } 
   .card{
     width: 25%;
-    /***這邊要補陰影***/ 
+    display: flex;
+    flex-direction: column;    
+    @include mobile{
+      width: 100%;  
+      }
   } 
 }
 .customer{
   padding: 16px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
+  border: 1px #DEE2E6 solid;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px #00000029;
 }
 .date{
   color: #707070;
+  font-size: 14px;
+}
+
+/***contactus start***/
+.contactus{
+  background-color: #FBF2F2;
+}
+.contact-container{
+  max-width: 636px;
+  margin: 0 auto;
+  padding: 80px 0;
+  @include mobile{
+    padding: 40px 14px;
+  }
+  p{
+  font-size: 20px;
+  }
+}
+.contect-input{
+  font-size: 16px;
+}
+.contact-item{
+  padding-bottom: 16px;
+}
+.pb-48{
+  padding-bottom: 48px;
+  @include mobile{
+    padding-bottom: 24px;
+  }
+}
+.agreement{
+  display: flex;
+}
+.pt-24{
+  padding-top: 24px;
+}
+.w100{
+  width: 100%;
+}
+.h36{
+  height: 36px;
+  }
+.bgc{
+  background-color: $thirdColor;
+}
+.aifs{
+  display: flex;
+  align-items: flex-start;
+}
+.mt8{
+  margin-top: 8px;
+}
+.op-2{
+  opacity: 0.2
+}
+.mr4{
+  margin-right: 4px;
+}
+
+.btn{
+  padding: 16px 176px;
+  background-color: $secondaryColor;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  @include mobile{
+    padding: 16px 142px;
+  }
+}
+.border0{
+  border: 0;
 }
 
 
-*{outline:1px solid grey;}
+//*{outline:1px solid grey;}
