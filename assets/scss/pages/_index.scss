@@ -228,7 +228,7 @@ p{
   .input-box{
     border: 1px solid #000000;
     opacity: 1;
-    ::placeholder{
+    &::placeholder{
       opacity: 0.2;
     }
   }
@@ -279,11 +279,12 @@ p{
   border: solid 1px black;
   cursor: pointer;
   opacity: 1;  
+  &:checked {
+    background-color: $thirdColor;
+  }
 }
 
-.agreement .checkbox:checked {
-  background-color: $thirdColor;
-}
+
 
 .btn{
   padding: 16px 176px;
