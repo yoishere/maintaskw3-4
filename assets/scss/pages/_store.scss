@@ -69,7 +69,16 @@
 
 .storesite-d-flex{
     display: flex;
+    @include mobile{
+        display: block;
+    }
 }
+
+.g24{
+    gap: 24px;
+}
+.mb80{
+    margin-bottom: 80px;}
 
 .color-darkgrey{
     color: #212529;
@@ -95,5 +104,12 @@
 }
 .mt40{
     margin-top: 40px;
+}
+
+.googlemap{
+       
+    @include mobile{
+        margin-top: 24px;
+        margin-bottom: 64px;}
 }
 *{outline:1px grey solid;}
