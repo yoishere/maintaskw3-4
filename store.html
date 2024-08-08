@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>store</title>
+    <title>storesite</title>
+  <script type="module" crossorigin src="/maintaskw3-4/assets/main-cd4a2419.js"></script>
+  <link rel="stylesheet" href="/maintaskw3-4/assets/main-13bddd2c.css">
 </head>
+
 <body>
 <div class="header">
     <div class="header-container">
@@ -23,7 +25,48 @@
 </div>
 
 <section>
-
+    <div class="container">
+        <div class="storesite-h1">門市據點</div>
+        <div class="select-form">
+            <label for="whichstore" class="storesite-h2 h2-me">選擇分店</label>
+            <select name="whichstore" id="taipeiflagship" class="storesite-h4 h4-border h34w308">
+                <option value="taipeiflagship" class="storesite-h4 opacity-75">台北中山旗艦店</option>
+                <option value="yard" class="storesite-h4 opacity-75">台北綠園店</option>
+                <option value="taichungflagship" class="storesite-h4 opacity-75">台中清水旗艦店</option>
+                <option value="image" class="storesite-h4 opacity-75">高雄中正形象店</option>
+                <option value="dream" class="storesite-h4 opacity-75">高雄夢時代店</option>
+            </select>
+        </div>
+    </div>
+</section>
+<section class="mt40">
+    <div class="container storesite-d-flex">
+        <div class="storesite-card color-darkgrey">
+            <div class="storecover">
+                <img src="/maintaskw3-4/assets/storepage-1-bd842520.png" alt="storepage-1">
+                <div class="storesite-h2 card-h2-padding storesite-card-border">台北中山旗艦店</div>
+            </div>
+            <div class="contactstore storesite-card-border">
+                <div class="storesite-tel d-flex">
+                    <span class="material-symbols-outlined">call</span>                        
+                    <div class="storesite-h3 ps-10">電話：(02)000-1234</div>
+                </div>
+                <div class="storesite-time d-flex">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <div class="storesite-h3 ps-10">營業時間：10:00-21:00</div>
+                </div>
+                <div class="storesite-site d-flex">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <div class="storesite-h3 ps-10">地址：台北市中山區南京東路25巷2-1號</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="googlemap">
+            123
+            <!-- 這邊不知道要怎麼插入googlemap -->
+        </div>
+    </div>
 </section>
 
 <footer class="footer">
@@ -45,6 +88,9 @@
                     <div class="contactitem">
                         <span class="material-symbols-outlined">mail</span>
                         <p>glasses@business.com</p>
+
+                        <!-- 想要這邊能夠放大撐開 -->
+                         
                     </div>
                 </div>
             </div>
@@ -66,5 +112,10 @@
             </ul>
         </div>
     </div>
-</footer></body>
+</footer>
+
+
+<!-- 一定要加上面這行才吃的到樣式!! 請記得~~~~~ -->
+
+</body>
 </html>
