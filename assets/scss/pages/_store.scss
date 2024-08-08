@@ -2,8 +2,8 @@
 *,*::before,*::after {
     box-sizing: border-box;
   }
-  .container{
-    max-width: 1032px;
+  .store-container{
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 12px;
     @include mobile{
@@ -29,8 +29,19 @@
         margin-top: 40px;
     }  
 }
+.select-form{
+    display: flex;
+    align-items: center;
+}
 
 .storesite-h2{
+    font-size: 24px;
+    display: block;
+    @include mobile{
+        font-size: 16px;
+    } 
+}
+.storecover-h2{
     font-size: 24px;
 }
 
@@ -40,7 +51,7 @@
 
 .storesite-h4{
     font-size: 18px;
-    color: #495057;
+    color: #495057;    
 }
   /***section1 stat***/
 .opacity-75{
@@ -79,6 +90,7 @@
 
 .storesite-d-flex{
     display: flex;
+    
     @include mobile{
         display: block;
     }
@@ -123,4 +135,4 @@
         margin-bottom: 64px;
     }
 }
-*{outline:1px grey solid;}
+// *{outline:1px grey solid;}
