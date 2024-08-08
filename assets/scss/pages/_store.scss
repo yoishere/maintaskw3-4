@@ -1,0 +1,95 @@
+/***全部***/
+*,*::before,*::after {
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1032px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include mobile{
+      padding: 0 13px;
+    }
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+
+.storesite-h1{
+    border-left: 8px solid $secondaryColor;
+    font-size: 48px;
+    font-weight: bold; 
+    margin-bottom: 32px;
+    margin-top: 96px; 
+    @include mobile{
+        margin-bottom: 24px;  
+        margin-top: 40px;
+    }  
+}
+
+.storesite-h2{
+    font-size: 24px;
+}
+
+.storesite-h3{
+    font-size: 20px;
+}
+
+.storesite-h4{
+    font-size: 18px;
+    color: #495057;
+}
+  /***section1 stat***/
+.opacity-75{
+    opacity: 0.75;}
+
+.h4-border{
+    border: 1px solid #CED4DA;
+}
+
+.h34w308{
+    height: 38px;
+    width: 304px;
+    @include mobile{
+        height: 38px;
+        width: calc(100% - 112px);
+    }
+}
+
+.h2-me{
+    margin-right: 16px;
+    @include mobile{
+        margin-right: 8px;
+    }
+}
+
+  /***section2(card) stat***/
+
+.color-darkgrey{
+    color: #212529;
+}
+
+.card-h2-padding{
+    padding: 8px 0 8px 24px;
+}
+
+.contactstore{
+    padding: 16px 0 16px 24px;
+    gap: 8px;
+}
+.storesite-card-border{
+    border: 1px solid #00000020;
+}
+
+.ps-10{
+    padding-left: 10px;
+}
+.d-flex{
+    display: flex;
+}
+.mt40{
+    margin-top: 40px;
+}
+*{outline:1px grey solid;}
