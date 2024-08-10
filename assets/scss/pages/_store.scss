@@ -7,7 +7,7 @@
     margin: 0 auto;
     padding: 0 12px;
     @include mobile{
-      padding: 0 13px;
+      padding: 0 12px;
     }
   }
   img{
@@ -49,11 +49,14 @@
     font-size: 20px;
 }
 
+
+  /***section1 start***/
+
 .storesite-h4{
-    font-size: 18px;
+    font-size: 18px;    
+    line-height: 1.5;
     color: #495057;    
 }
-  /***section1 stat***/
 .opacity-75{
     opacity: 0.75;}
 
@@ -61,11 +64,11 @@
     border: 1px solid #CED4DA;
 }
 
-.h34w308{
-    height: 38px;
-    width: 304px;
+.h40w306{
+    height: 40px;
+    width: 306px;
     @include mobile{
-        height: 38px;
+        height: 40px;
         width: calc(100% - 112px);
     }
 }
@@ -79,28 +82,28 @@
 
   /***section2(card) stat***/
 
-
-.storesite-card{
-    flex:0.37;
-}
-
-.googlemap{
-    flex:0.63;
-}
-
-.storesite-d-flex{
-    display: flex;
-    
+.grid{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
     @include mobile{
         display: block;
     }
 }
-
-.g24{
-    gap: 24px;
+.storesite-card{
+    grid-column: span 5;
 }
+
+.googlemap{
+    grid-column: span 7;
+}
+
 .mb80{
-    margin-bottom: 80px;}
+    margin-bottom: 80px;
+    @include mobile{
+        margin-bottom: 64px;
+    }
+}
 
 .color-darkgrey{
     color: #212529;
@@ -121,6 +124,9 @@
 .ps-10{
     padding-left: 10px;
 }
+.pb-8{
+    padding-bottom: 8px;
+}
 .d-flex{
     display: flex;
 }
@@ -129,7 +135,7 @@
 }
 
 .googlemap{
-    width: 100%;   
+    max-width: 100%;   
     @include mobile {
         margin-top: 24px;
         margin-bottom: 64px;
