@@ -135,7 +135,11 @@
 }
 
 .googlemap{
-    max-width: 100%;   
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
     @include mobile {
         margin-top: 24px;
         margin-bottom: 64px;
