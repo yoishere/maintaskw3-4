@@ -12,3 +12,8 @@ a{
     color:inherit;
     //繼承父元素顏色
 }
+
+a:hover{
+    font-weight: bold;
+    color: $primaryColor;
+}
